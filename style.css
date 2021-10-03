@@ -95,11 +95,6 @@ html{
     font-weight: 400;
     color: #fff;
 }
-
-
-
-
-
 .about .text{
     display: flex;
     flex-direction: column;
@@ -169,6 +164,7 @@ html{
     border: none;
     margin-bottom: 100px;
 }
+
 /* ----------------------------------------------------- */
 .owl-prev{
     left:-30px;
@@ -234,14 +230,15 @@ html{
 .links-section{
     text-decoration: none;
     list-style: none;
-    text-align: left;
-    padding-left: 0px;
     
 }
 .links-section a{
     font-size: 18px;
     color: #777C81;
     line-height: 30px;
+}
+.links-section a:hover{
+    color: #fff;
 }
 .footer-form input{
     width: 100%;
@@ -252,17 +249,15 @@ html{
     padding-left: 20px;
  }
 .footer-form button{
-    font-size: 18px;
+    font-size: 0.8rem;
     color: #ffffff;
     background: #E9AD28;
     height: 48px;
-    border: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding: 0 15px 0 25px;
-    right: 0;
-    top: 0;
-    width: 100%;
+  
+}
+.footer hr{
+    color: #fff;
+    background: #fff;
 }
 
 .bg2{
@@ -298,9 +293,38 @@ html{
 .bg2 a:hover{
     background:#fff;
 }
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
 
-/* --------------------------------- */
-@media screen and (max-width: 988px){
+
+.card {
+    border: none
+}
+
+.profile img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%
+}
+
+.second {
+    border-left: 2px dotted lightgrey;
+    border-right: 2px dotted lightgrey
+}
+/* ---------------------------------- */
+
+@media screen and (max-width: 980px){
     .navbar{
         padding: 1rem;
     }
@@ -310,54 +334,85 @@ html{
     #navbarSupportedContent > ul > li:nth-child(n) > a{
         padding: 0.8rem 0rem;
     }
-    .navbar-toggler{
-        width: 47px;
-        height: 34px;
-        border:none;
-    }
-    .navbar-toggler .line{
-        width: 100%;
-        float: left;
-        height: 2px;
-        background-color: rgb(0,0,0,0.9);
-        margin-bottom: 5px;
-    }
-    .mid .hero{
+    .mid{
         position: relative;
+        background-position: center bottom;
     }
-    .mid .hero h2{
-        font-size: 2.5rem;
+    .mid  h2{
+        font-size: 3rem;
     }
-    .mid .hero p{
+    .mid  p{
         font-size: 1rem;
 
     }
-    .mid .hero a{
-    font-size: 0.9rem;
-    }
-    
     .bg2 p{
-
         font-size: 1rem;
     }
     .bg2 h2{
         font-size: 2rem;
+        margin-bottom: 20px;
     }
-    .bg2 a{
-        background: #dfa974;
-        font-weight: 600;
-        padding: 0.6rem 1.4rem;
-        border-radius: 30px;
+    .navbar-toggler line{
+        color:black;
+    }
+    
+    
+    .footer{
+       font-size: 1rem;
+    }
+
+    .footer-logo{
+        font-size: 1.5rem;
+    }
+    .footer-contact{
+        font-size: 1.5rem;
+    }
+    .contact-logo a{
+        font-size: 1.5rem;
+    }
+    .contact-logo a:hover{
+        color: #fff;
+    }
+    .heading-section{
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        letter-spacing: .1em;
+        color: #fff!important;
+    }
+    .links-section{
         text-decoration: none;
+        list-style: none;
+        
     }
-    .bg2 a:hover{
-        background:#fff;
+    .links-section a{
+        font-size: 18px;
+        color: #777C81;
+        line-height: 30px;
     }
-   
+    .links-section a:hover{
+        color: #fff;
+    }
+    .footer-form input{
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+        color: #777C81;
+        border: none;
+        padding-left: 20px;
+    }
+    .footer-form button{
+        font-size: 0.8rem;
+        color: #ffffff;
+        background: #E9AD28;
+        height: 48px;
+    
+    }
+
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width: 460px){
     .navbar{
-        padding: 1rem 1.5rem;
+        padding: 1rem;
     }
     #navbarSupportedContent > ul{
         padding-left: 0.8rem;
@@ -365,103 +420,97 @@ html{
     #navbarSupportedContent > ul > li:nth-child(n) > a{
         padding: 0.8rem 0rem;
     }
-    .navbar-toggler{
-        width: 47px;
-        height: 34px;
-        border:none;
-    }
-    .navbar-toggler .line{
-        width: 100%;
-        float: left;
-        height: 2px;
-        background-color: rgb(0,0,0,0.9);
-        margin-bottom: 5px;
-    }
-    .mid .hero{
+    .mid{
         position: relative;
-        
     }
-  
-    .mid .hero p{
-        font-size: 0.8rem;
+
+    .mid  h2{
+        font-size: 2.5rem;
+    }
+    .mid  p{
+        font-size: 1rem;
 
     }
-    .mid .hero a{
-    font-size: 0.9rem;
+    .bg2 p{
+        font-size: 1rem;
     }
-    .heading p{
-        font-size: 0.8rem;
+    .bg2 h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .navbar-toggler line{
+        color:black;
+    }
+    .heading h6{
+        font-size: 1rem;
     }
     .heading h2{
         font-size: 1.5rem;
     }
-    .bg2 p{
-
-        font-size: 1rem;
-    }
-    .bg2 h2{
-        font-size: 1.8rem;
-    }
-    .bg2 a{
-        background: #dfa974;
-        font-weight: 500;
-        padding: 0.6rem 1.4rem;
-        border-radius: 30px;
-        text-decoration: none;
-    }
-    .bg2 a:hover{
-        background:#fff;
-    }
     .about .text h6{
-        color: #c09457;
-        font-weight: 800;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
+        font-size: 1rem;
+        padding-top: 50px;
     }
     .about .text h2{
-        font-weight: 700;
         font-size: 2rem;
         
     }
     .about .text p{
-      
-        font-weight: 400;
-        font-size: 1rem;
-        letter-spacing: 0.5px;
-        padding-bottom: 30px;
+    font-size: 1rem;
         
     }
-    .map{
-        display: none;
+    
+    .footer{
+       font-size: 1rem;
     }
+
+    .footer-logo{
+        font-size: 1.5rem;
+    }
+    .footer-contact{
+        font-size: 1.5rem;
+    }
+    .contact-logo a{
+        font-size: 1.5rem;
+    }
+    .contact-logo a:hover{
+        color: #fff;
+    }
+    .heading-section{
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        letter-spacing: .1em;
+        color: #fff!important;
+    }
+    .links-section{
+        text-decoration: none;
+        list-style: none;
+        
+    }
+    .links-section a{
+        font-size: 18px;
+        color: #777C81;
+        line-height: 30px;
+    }
+    .links-section a:hover{
+        color: #fff;
+    }
+    .footer-form input{
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+        color: #777C81;
+        border: none;
+        padding-left: 20px;
+    }
+    .footer-form button{
+        font-size: 0.8rem;
+        color: #ffffff;
+        background: #E9AD28;
+        height: 48px;
     
-.footer{
-    font-size: 1rem;
-}
-.footer p{
-    color: #777C81;
-}
-.footer-logo{
-    font-size: 1.5rem;
-}
-.footer-contact{
-    color: #ffffff;
-    font-weight: 500;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-.contact-logo a{
-    font-size: 1.8rem;
-}
-.heading-section{
-    font-size: 1.5rem;
-}
-.links-section{
-   
-    padding-left: 10px;
-    
+    }
+
 }
 
-
-   
-}
